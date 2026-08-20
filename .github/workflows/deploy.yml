@@ -38,9 +38,8 @@ jobs:
       - name: Build
         run: npm run build
 
-        - name: Prepare GitHub Pages
-  run: |
-    cp dist/_shell.html dist/index.html
+      - name: Prepare GitHub Pages
+        run: cp dist/_shell.html dist/index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v6
